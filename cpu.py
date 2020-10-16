@@ -78,11 +78,26 @@ class CPU:
     def alu(self, op, reg_a, reg_b):
         """ALU operations."""
 
+    # `AND` `OR` `XOR` `NOT` `SHL` `SHR` `MOD`
         if op == "ADD":
             self.reg[reg_a] += self.reg[reg_b]
         # elif op == "SUB": etc
         elif op == "MUL":
             self.reg[reg_a] *= self.reg[reg_b]
+        elif op == "AND":
+            pass
+        elif op == "OR":
+            pass
+        elif op == "XOR":
+            pass
+        elif op == "NOT":
+            pass
+        elif op == "SHL":
+            pass
+        elif op == "SHR":
+            pass
+        elif op == "MOD":
+            pass   
         else:
             raise Exception("Unsupported ALU operation")
 
